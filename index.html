@@ -4,6 +4,15 @@
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Content-Security-Policy"
+    content="
+    default-src 'self' blob: data:;
+    script-src 'self' 'unsafe-eval' blob:;
+    worker-src 'self' blob:;
+    connect-src *;
+    img-src * data: blob:;
+    style-src 'self' 'unsafe-inline';
+    ">
     <title>Quize2DGame</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <link rel="stylesheet" href="TemplateData/style.css" />
